@@ -1,0 +1,71 @@
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+logs/
+*.log
+
+# dotenv environment files
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Avoid committing private API keys
+backend/.env
+frontend/.env
+
+# Uploads (user uploaded files)
+backend/uploads/
+uploads/
+
+# Temporary data
+*.tmp
+*.temp
+tmp/
+temp/
+.DS_Store
+
+# Dist / build output
+dist/
+build/
+frontend/dist/
+frontend/build/
+backend/dist/
+backend/build/
+
+# Vite cache
+vite.config.js.timestamp*
+vite.config.ts.timestamp*
+.vite/
+frontend/.vite/
+
+# Coverage (if using Jest / Vitest)
+coverage/
+
+# Cache folders
+.cache/
+.parcel-cache/
+.eslintcache
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+!.vscode/*.json
+__pycache__/
+*.pyc
+venv/
+.venv/

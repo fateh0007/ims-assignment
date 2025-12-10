@@ -1,0 +1,16 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 font-sans text-slate-900;
+  }
+}
+
+@layer components {
+  .app-shell {
+    @apply min-h-screen flex;
+  }
+}
