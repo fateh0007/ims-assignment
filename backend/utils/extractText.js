@@ -47,7 +47,6 @@ if (!pdfParseFn) {
 async function extractTextFromFile(filePath, mime) {
   const ext = path.extname(filePath).toLowerCase();
 
-  // Plain text files
   if (ext === '.txt' || ext === '.md') {
     try {
       return fs.readFileSync(filePath, 'utf8');
@@ -55,8 +54,6 @@ async function extractTextFromFile(filePath, mime) {
       throw new Error('Unable to read text file: ' + e.message);
     }
   }
-
-  // PDF extraction via pdf-parse if available
   if (ext === '.pdf' || mime === 'application/pdf') {
     if (pdfParseFn) {
       try {

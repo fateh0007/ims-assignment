@@ -1,8 +1,3 @@
-
-/**
- * npm run seed
- * Creates one sample course.
- */
 require('dotenv').config();
 const mongoose = require('mongoose');
 const Course = require('./models/Course');
